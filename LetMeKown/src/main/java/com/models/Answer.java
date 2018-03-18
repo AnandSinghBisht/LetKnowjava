@@ -1,6 +1,6 @@
 package com.models;
 
-public class Answers {
+public class Answer {
 	
 
 }
