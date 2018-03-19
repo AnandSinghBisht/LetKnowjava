@@ -25,7 +25,6 @@ public class QuestionController {
 	{
 		
 		return questionService.findAll();
-			
 	
 	}
 	
