@@ -1,6 +1,7 @@
 package com.models;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,6 +14,9 @@ public class Question {
 	private String content;
 	private Date createDate = new Date();
 	private String modifyDate;
+	
+	
+	private List<QuestionImages> questionImages;
 
 	public String getId() {
 		return id;
@@ -45,5 +49,15 @@ public class Question {
 	public void setModifyDate(String modifyDate) {
 		this.modifyDate = modifyDate;
 	}
+
+	public List<QuestionImages> getQuestionImages() {
+		return questionImages;
+	}
+
+	public void setQuestionImages(List<QuestionImages> questionImages) {
+		this.questionImages = questionImages;
+	}
+	
+	
 
 }
